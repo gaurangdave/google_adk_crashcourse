@@ -1,9 +1,8 @@
 from google.adk.agents.llm_agent import Agent
-from google.adk.tools import google_search
 from datetime import datetime
 
 
-def get_current_time() -> dict:
+def get_current_time() -> dict[str, str]:
     """Gets the current time in the format YYYY-MM-DD HH:MM:SS
     """
     return {
