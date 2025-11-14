@@ -23,7 +23,7 @@ source .venv/bin/activate
 * Install Dependencies
 ```bash
 
-pip install google-adk
+pip install google-adk yfinance psutil litellm google-genai python-dotenv
 
 ```
 
