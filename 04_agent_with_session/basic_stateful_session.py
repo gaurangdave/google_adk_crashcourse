@@ -12,6 +12,8 @@ load_dotenv()
 # Create a new session service to store state
 session_service_stateful = InMemorySessionService()
 
+# Initialize the state
+# in production this can be initialized with user preferences from the database
 initial_state: dict[str,Any] = {
     "user_name": "Tony Stark",
     "user_dietary_preferences": ["pescatarian"],
