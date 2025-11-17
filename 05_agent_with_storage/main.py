@@ -51,8 +51,8 @@ async def main():
     # Use a local variable to avoid creating an unbound local name for SESSION_ID
     session_id = str(uuid.uuid4())
 
-    # if existing session exis for the user load the fist one.
-    # is it possible for a user to have more than one sesion? -- what would be the use case there.
+    # if existing session exists for the user load the fist one.
+    # is it possible for a user to have more than one session? -- what would be the use case there.
     if existing_sessions and len(existing_sessions.sessions) > 0:
         session_id = existing_sessions.sessions[0].id
         print(f"{emoji.emojize(':partying_face:')} Found existing session...")
