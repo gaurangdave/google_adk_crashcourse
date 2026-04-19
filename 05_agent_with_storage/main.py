@@ -13,7 +13,7 @@ load_dotenv()
 
 # database url
 db_url = "sqlite:///./data.db"
-# setting db sesion service for persistent storage
+# setting db session service for persistent storage
 session_service = DatabaseSessionService(db_url=db_url)
 
 # Initialize the state
